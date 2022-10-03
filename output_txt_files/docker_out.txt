@@ -1,15 +1,16 @@
-[2022-10-02 15:23:26,830] INFO in app: JSON payload:
-{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}        
-[2022-10-02 15:23:26,855] INFO in app: Inference payload DataFrame:
+[2022-10-03 11:35:03,998] INFO in app: JSON payload: 
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2022-10-03 11:35:04,013] INFO in app: Inference payload DataFrame:
    CHAS     RM    TAX  PTRATIO      B  LSTAT
 0     0  6.575  296.0     15.3  396.9   4.98
-[2022-10-02 15:23:26,888] INFO in app: Scaling Payload:
+[2022-10-03 11:35:04,030] INFO in app: Scaling Payload:
    CHAS     RM    TAX  PTRATIO      B  LSTAT
 0     0  6.575  296.0     15.3  396.9   4.98
-172.17.0.1 - - [02/Oct/2022 15:23:26] "POST /predict HTTP/1.1" 200 -
+[2022-10-03 11:35:04,038] INFO in app: Prediction output:
+[20.35373177134412]
+172.17.0.1 - - [03/Oct/2022 11:35:04] "POST /predict HTTP/1.1" 200 -
 
-
-$ ./make_prediction.sh 
+$ ./make_prediction.sh
 Port: 8000
 {
   "prediction": [
